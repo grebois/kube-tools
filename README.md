@@ -5,7 +5,7 @@
 
 Github Action with Kubernetes tools:
 kubectl, kustomize, helm, kubeval, conftest, jq, yq, go.
-See the [release](https://github.com/stefanprodan/kube-tools/releases)
+See the [release](https://github.com/grebois/kube-tools)
 page for the list of available tools and versions.
 
 GitHub Workflow example:

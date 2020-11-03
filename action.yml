@@ -1,4 +1,4 @@
-name: 'Kubernetes toolset'
+name: 'Kubernetes-toolbox'
 description: 'Github Action with Kubernetes tools: kubectl, kustomize, helm, kubeval, kubeaudit, conftest, jq, yq, go'
 author: 'Stefan Prodan'
 branding:
@@ -20,6 +20,8 @@ inputs:
     description: 'kubeseal version'
   kubeaudit:
     description: 'kubeaudit version'
+  kops:
+    description: 'kops version'
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -30,3 +32,5 @@ runs:
     - ${{ inputs.helm }}
     - ${{ inputs.helmv3 }}
     - ${{ inputs.kubeseal }}
+    - ${{ inputs.kubeaudit }}
+    - ${{ inputs.kops }}
