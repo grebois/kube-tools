@@ -46,4 +46,4 @@ RUN echo "downloading yq" && curl -sL https://github.com/mikefarah/yq/releases/l
 RUN echo "downloading jq" && curl -sL https://github.com/stedolan/jq/releases/latest/download/jq-linux64 \
     -o /usr/local/bin/jq && chmod +x /usr/local/bin/jq && jq --version
 
-ENTRYPOINT ["sh"]
+ENTRYPOINT ["/bin/sh","-c"]

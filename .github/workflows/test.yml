@@ -7,16 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: conftest
-        uses: ./
-        with:
-          command: |
-            kustomize build test/kustomize | conftest test -p test/policy -
-      - name: kubeval
-        uses: ./
-        with:
-          command: |
-            kustomize build test/kustomize | kubeval --strict --ignore-missing-schemas
       - name: tools
         uses: ./
         with:
